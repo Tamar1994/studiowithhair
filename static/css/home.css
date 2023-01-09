@@ -160,6 +160,11 @@ body {
 
 
 @media screen and (max-width: 750px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
     
     #nav_topo a{
         visibility: hidden;
