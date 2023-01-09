@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Studio With Hair</title>
+
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css/home.css') }}/>
+
+    <script src="https://kit.fontawesome.com/36fbfd0157.js" crossorigin="anonymous"></script>
+    <script src={{ url_for('static', filename='js/home.js')}}></script>
+    
+</head>
+<body onload=funcoes()>
+
+    <div id="topo-site">
+        <img id="img_topo_site" class="loading_img" src={{ url_for('static', filename="img/pagina1.jpg") }} alt="Background Topo" />
+        <div id="framefundo"></div>
+        <div id="nav_topo">
+            <a href="/">Prótese Capilar</a>
+            <a href="/">Serviços</a>
+            <a href="/">Cursos</a>
+            <div id="logo">
+                <img src={{ url_for('static', filename='img/logo.png') }} alt="logo studio with hair" />
+            </div>
+            <a href="/">Galeria</a>
+            <a href="/">Contato</a>
+            <a href="/">Localização</a>
+        </div>
+        <div id="texto-topo">
+            <div id="texto1" class="div_texto">
+                <p class="texto_menor">Barbearia Clássica</p>
+                <p class="texto_maior">Especialista em</p>
+                <p class="texto_maior">Prótese Capilar</p>
+                <button onclick="location.href = 'https://api.whatsapp.com/send/?phone=5512988659446'"><i class="fa-brands fa-whatsapp"></i>   Agende Já</button>
+            </div>
+            <div id="texto2" class="div_texto">
+                <p class="texto_menor">Conheça nossos cursos</p>
+                <li>Especialização Corte com Tesoura</li>
+                <li>Especialização Prótese Capilar</li>
+                <button onclick="location.href = 'https://api.whatsapp.com/send/?phone=5512988659446'"><i class="fa-brands fa-whatsapp"></i>   Agende Já</button>
+            </div>
+            <div id="texto3" class="div_texto">
+                <p class="texto_menor">Agende já sua</p>
+                <p class="texto_maior">Avaliação Gratuita</p>
+                <button onclick="location.href = 'https://api.whatsapp.com/send/?phone=5512988659446'"><i class="fa-brands fa-whatsapp"></i>   Agende Já</button>
+            </div>
+        </div>
+        
+            <div id="nav_topo_recursivo">
+                <div id="menu_recursivo">
+                    <a href="/">Prótese Capilar</a>
+                    <hr/>
+                    <a href="/">Serviços</a>
+                    <hr/>
+                    <a href="/">Cursos</a>
+                    <hr/>
+                    <a href="/">Galeria</a>
+                    <hr/>
+                    <a href="/">Contato</a>
+                    <hr/>
+                    <a href="/">Localização</a>
+                </div>
+                <div id="button_menu_recursivo" onclick=abrirMenu()>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    </div>
+    
+
+</body>
+</html>
