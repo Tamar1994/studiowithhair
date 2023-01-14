@@ -251,6 +251,7 @@ body {
 
     #texto-topo {
         width: 100vw;
+        overflow: hidden;
     }
 
     .texto_maior {
