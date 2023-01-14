@@ -264,6 +264,7 @@ body {
         width: 100vw;
         height: auto;
         left: 0;
+        overflow: hidden;
     }
 
     .texto_maior {
