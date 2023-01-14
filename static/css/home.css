@@ -165,7 +165,7 @@ body {
 @media screen and (max-width: 750px) {
 
     body {
-        width: 99vw;
+        width: 100vw;
         height: 100vh;
         overflow: hidden;
     }
@@ -283,6 +283,7 @@ body {
     .div_texto, .div_texto_visible li{
         font-size: 30px;
         color: white;
+        text-align: center;
     }
 
 }
